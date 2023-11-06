@@ -8,7 +8,7 @@
 
 html{
     font-size: 62.5%;
-    
+
 
 }
 
@@ -29,3 +29,23 @@ body{
     font-size: 2rem;
 }
 
+/*
+.navegacion-principal{
+    background-color: var(--secundario);
+
+}
+*/
+.contenedor{
+    width: 120rem;
+    /*margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;*/
+    margin: 0 auto;
+
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+    
+}
