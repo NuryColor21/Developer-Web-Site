@@ -8,22 +8,37 @@
 
 html{
     font-size: 62.5%;
-
+    box-sizing: border-box; /*Hack para el manejo de box model*/
 
 }
+
+/*Hack para el manejo de box model*/
+*, *::before,*::after{
+    box-sizing: inherit;
+}
+
 
 body{
     font-size: 16px;
-    
-}
-
-.titulo{
-    text-align: center;
-    font-size: 3.8rem;
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Krub', sans-serif;
-    
 }
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
 
 .titulo span{
     font-size: 2rem;
@@ -48,8 +63,6 @@ body{
 
 .nav-bg{
     background-color: var(--secundario);
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: 'Krub', sans-serif;
 }
 
 .navegacion-principal{
@@ -76,9 +89,56 @@ body{
     
 }
 
+.hero{
+    background-image: url(../img/MicrosoftTeams-image.png); /*../ es para regresar una carpeta afuera y buscar la imagen*/
+    background-repeat: no-repeat; /* Para hacer que la imagen no se repita cuando no coincide con el tamaño del navegador*/
+    background-size: cover; /* Para que la imagen tome el tamaño disponible*/
+    height: 450px;
+    position: relative; /* El padre debe ser relative*/
+}
+
+.contenido-hero{
+    position: absolute; /* El hijo debe ser absolute*/
+    background-color: rgba(0,0,0,.7); /* 70% de transparencia*/
+    width: 100%;
+    height: 100%;
+    /* Para alienar vertical y horizontal*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-hero h2, .contenido-hero p{
+    color: var(--blanco);
+}
+
 @media (min-width: 768px) {
     .navegacion-principal{
         flex-direction: row; /*Para que se acomode como filas cuando se haga mas pequena la pantalla*/
         
     }
  }
+
+ .ubicacion{
+    display: flex;
+    align-items: flex-end;
+ }
+
+ .boton{
+    background-color: var(--secundario);
+    text-decoration: none;
+    padding: 1rem 3rem; /*El 3rem es para las esquinas redondeadas*/
+    border-radius: .5rem;
+    color: var(--blanco);
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase; /*Transformo las letras en mayusculas*/
+    text-align: center;
+    width: 90%;
+ }
+
+ @media (min-width: 780px) {
+    .boton{
+        width: auto;
+    }
+  }
