@@ -1,4 +1,4 @@
-:root{
+:root{ /*Definimos los colores que usaremos para toda la pagina, en forma de variables*/
     --blanco: #ffffff;
     --oscuro: #212121;
     --primario: #ffc107;
@@ -8,14 +8,15 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%;   /*Tamaño de letra*/
     box-sizing: border-box; /*Hack para el manejo de box model*/
-    background-image: linear-gradient(to top, var(--gris_claro) 0%, var(--blanco) 100%);
-    scroll-snap-type: y mandatory;
+    background-image: linear-gradient(to top, var(--gris_claro) 0%, var(--blanco) 100%); /*Es el color del fondo de nuestro HTML, en este caso es un gradiente que va de blanco a gris claro*/
+    scroll-snap-type: y mandatory; /*Desplazamiento del contenedor*/
 }
 
+ /*Desplazamiento del contenedor y dividimos las secciones de como queremos que se desplace*/
 .titulo, .servicios-heading, .contacto-heading{
-    scroll-snap-align: start;
+    scroll-snap-align: start; 
     scroll-snap-stop: always; 
 }
 
@@ -26,34 +27,35 @@ html{
 
 
 body{
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /*TAMAÑO DE LETRA*/
+    font-family: Arial, Helvetica, sans-serif; /*Familia de letra*/
     font-family: 'Krub', sans-serif;
 }
 
-.sombra{
+.sombra{  /*La sombra que se muestra en el apartado de contacto*/
+    /*Fragmento de codigo que sacamos de la pagina*/
     box-shadow: 0px 0px 5px 0px rgba(112,112,112,0.48);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(112,112,112,0.5);
     -moz-box-shadow: 0px 0px 5px 0px rgba(112,112,112,0.5);
-    background-color: var(--blanco);
+    background-color: var(--blanco); 
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 1rem; /*Redondeo*/
 }
 
 h1{
-    font-size: 3.8rem;
+    font-size: 3.8rem; /*Tamaño del titulo h1*/
 }
 
 h2{
-    font-size: 2.8rem;
+    font-size: 2.8rem; /*Tamaño del titulo h2*/
 }
 
 h3{
-    font-size: 1.8rem;
+    font-size: 1.8rem; /*Tamaño del titulo h3*/
 }
 
 h1,h2,h3{
-    text-align: center;
+    text-align: center; /*Alineado del titulo h1,h2.h3*/
 }
 
 
@@ -79,9 +81,10 @@ h1,h2,h3{
 }
 
 .nav-bg{
-    background-color: var(--secundario);
+    background-color: var(--secundario); /*Color de la barra de navegacion*/
 }
 
+/*Estilos de la barra de navegacion*/
 .navegacion-principal{
     display: flex;
     flex-direction: column;
@@ -142,6 +145,7 @@ h1,h2,h3{
     align-items: flex-end;
  }
 
+ /*Arreglos del boton*/
  .boton{
     background-color: var(--secundario);
     text-decoration: none;
@@ -169,7 +173,7 @@ h1,h2,h3{
     text-align: center;
  }
 
- .servicio h3{
+ .servicio h3{ 
     color: var(--secundario);
     font-weight: normal;
  }

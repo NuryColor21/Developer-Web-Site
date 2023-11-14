@@ -17,23 +17,27 @@
         <link rel="stylesheet" href="css/main.css">
         
     </head> <!--Termina la cabeza------------------------------------------------------------------------------>
+    
+    
     <body>
-        <header>
+        <header>  <!--Inicio de header------------------------------------------------------------------------->
             <h1 class="titulo"> Nury Colorado <span>Developer</span> </h1>
-        </header>
-            <div class="nav-bg">
+        </header> <!--Fin de header----------------------------------------------------------------------------->
+
+
+            <div class="nav-bg"> <!--Inicio de navegacion------------------------------------------------------------------------->
                 <nav class="navegacion-principal contenedor">
                     <a href="#">Inicio</a>
                     <a href="#">Sobre mi</a>
                     <a href="#">Clientes</a>
                     <a href="#">Contacto</a>
                 </nav>
-            </div>
+            </div> <!--Fin de navegacion------------------------------------------------------------------------->
             
             <section class="hero"><!-- HERO ---------------------------------------------------------------------------------------->
-                <div class="contenido-hero"> <!-- Contenido hero ---------------------------------------------------------------------------------------->
+                <div class="contenido-hero"> <!-- Contenido hero-->
                     <h2>Diseño y desarrollo Web</h2>
-                    <div class="ubicacion"> <!--DIV UBICACION------------------------------------------------------->
+                    <div class="ubicacion">  <!--DIV UBICACION-->
 
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-2" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -45,19 +49,19 @@
                         </svg>
 
                         <p>Mérida Yucatán</p>
-                    </div> <!--TERMINA DIV UBICACION----------------------------------------------------------------->
+                    </div> <!--TERMINA DIV UBICACION-->
                         <a class="boton" href="#"> Contactar </a>
-                </div> <!-- TERMINA Contenido hero ---------------------------------------------------------------------------------------->
+                </div> <!-- TERMINA Contenido hero -->
             </section><!-- TERMINA HERO ---------------------------------------------------------------------------------------->
         
 
-        <main class="contenedor sombra">
-
+        <main class="contenedor sombra"> <!--Inicio Contenedor sombra---------------------------------------------------------------------------------------->
             <h2 class="servicios-heading"> Mis servicios </h2>
-            <div class="servicios">
+            <div class="servicios"> <!--Div servicios-->
 
             <section class= "servicio">
             <h3> Diseño web </h3>
+            <!--Icono de diseño web-->
             <div class="iconos">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -68,7 +72,6 @@
               </svg>
             </div>
               <p>Cillum laborum cupidatat cillum veniam. Eiusmod amet sit ea veniam consequat ut anim enim aliqua quis ea fugiat velit. Dolor ipsum irure tempor adipisicing minim cupidatat adipisicing. Enim dolor proident esse Lorem aute. Ea ullamco commodo ex occaecat ullamco deserunt exercitation. Sit labore consectetur officia exercitation aute excepteur magna amet ut cillum laboris sit officia.</p>
-            
             </section>
             
             <section class="servicio">
@@ -101,6 +104,7 @@
             <section class="servicio">
                 <h3> E-commerce </h3>
                 <div class="iconos">
+                <!--Icono de E-commerce-->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
@@ -112,61 +116,63 @@
                 
             </section>
 
-             </div>  <!--AQUI ACABA EL DIV DEL SERVICIOS PRINCIPAL-->
+             </div> <!--AQUI ACABA EL DIV DEL SERVICIOS PRINCIPAL-->
         
 
-        <section>
+        <section> <!--SECTION CONTACTO---------------------------------------------------------------------------->
             <h2 class="servicios-heading">Contacto</h2>
         
 
-        <form class="formulario">
+        <form class="formulario"> <!--FORMULARIO---------------------------------------------------------------------------->
             <fieldset>
                 <legend>
                     Llena el formulario para establecer contactos
                 </legend>
-                <div class="contenedor-campos">
+                <div class="contenedor-campos"> <!--Contenedor campos y debajo deben estar sus campos-->
                     
-                <div class="campo">
-                <label>
-                    Nombre:
-                </label>
-                <input class="input-text" type="text" placeholder="Tu nombre">
-                </div>
-
-                <div class="campo">
+                    <div class="campo"> <!--Primer campo-->
                     <label>
-                        Teléfono:
+                        Nombre:
                     </label>
-                <input class="input-text" type="text" placeholder="Tu teléfono">
+                    <input class="input-text" type="text" placeholder="Tu nombre">
                     </div>
 
-                    <div class="campo">
-                    <label>
-                        Correo:
-                    </label>
-                <input class="input-text" type="text" placeholder="Tu correo">
-                </div>
+                    <div class="campo"> <!--Segundo campo-->
+                        <label>
+                            Teléfono:
+                        </label>
+                    <input class="input-text" type="text" placeholder="Tu teléfono">
+                        </div>
 
-                <div class="campo">
-                    <label>
-                        Mensaje:
-                    </label>
-                    <textarea class="input-text"> 
-                    </textarea>
-                </div>
+                        <div class="campo"> <!--Tercer campo-->
+                        <label>
+                            Correo:
+                        </label>
+                    <input class="input-text" type="text" placeholder="Tu correo">
+                    </div>
+
+                    <div class="campo"> <!--Cuarto campo-->
+                        <label>
+                            Mensaje:
+                        </label>
+                        <textarea class="input-text"></textarea> <!--El textarea es un apartado para poner un cuadro grande de texto-->
+                    </div>
             
-            </div>
+                </div><!--FIN Contenedor campos-->
                 <div class="alinear-derecha flex">
-                <input class="boton w-sm-100" type="submit" value="Enviar" />
+                <input class="boton w-sm-100" type="submit" value="Enviar" /> <!--Boton enviar-->
                 </div>
             </fieldset>
-        </form>
-        </section>
-        </main>
+        </form> <!--FIN FORMULARIO---------------------------------------------------------------------------->
+        </section> <!--FIN SECTION CONTACTO---------------------------------------------------------------------------->
+        </main> <!--Fin Contenedor sombra---------------------------------------------------------------------------------------->
+        
+        
+        <!--Footer--------------------------------------------------------------------------------------------------------------->
         <footer class="footer">
             <p>Todos los derechos reservados © </p>
         </footer>
 
       
-    </body>
-</html>
+    </body> <!--Fin del cuerpo-->
+</html> <!--Fin HTML-->
